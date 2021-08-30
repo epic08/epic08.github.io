@@ -1,18 +1,71 @@
-<html>
-  <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<style>
-body {
-    background-color: #292929;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Welcome to Netonium.cf</title>
+  </head>
+  <style>
+    body {
     color: #ffffff;
-    font-family: Lato, 'Open Sans';
-}
-</style>
-</html>
-<h1> Site in progress</h1>
-<main>
-    <h2>Site will be finished in November 10, 2021.</h2>
-    <p>Please refer to this site's repository README for more information
-      on when the site will be completed.
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8;
+    font-size: 20px;
+    position: relative;
+    background-image: linear-gradient(to right, rgb(78, 80, 255) , rgb(98, 0, 255));
+    font-weight: 300;
+    text-align: center;
+  }
+  </style>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Netonium.cf
+    </h1>
+    <p>
+      Alpha website opening on <strong>April 18, 2022</strong>
     </p>
-    <a href="https://github.com/epic08/epic08.github.io#readme">Github repository</a>
-</main>
+    
+    <h3>
+      Countdown
+    </h3>
+    <p>
+      <!-- Display the countdown timer in an element -->
+      <p id="demo"></p>
+
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("April 18 2022 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+          // Get today's date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Display the result in the element with id="demo"
+          document.getElementById("demo").innerHTML =
+            days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+          // If the count down is finished, write some text
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+      </script>
+    </h2>
+<p> <strong>@epic08</strong> </p>
+  </body>
+</html>
