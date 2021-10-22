@@ -2,8 +2,9 @@
 This site will display my projects and other stuff that i will add!
 *This site will be open source, because, it is.*
 
-# Major release will be on November 10, 2021.
-Site will be finished at the Nov 10, 2021. Why? So you don't get a horribly coded site!
+# Major release
+Site will be uploaded and updated constantly, 
+I have decided to release it early because I am pretty proud of what I have done
 
 Read 
 
