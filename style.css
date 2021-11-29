@@ -23,16 +23,17 @@ body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-weight: 540;
   }
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: #ff3c3c;
+    background-color: #4f3cff;
     color: rgb(255, 255, 255);
   }
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #ff3c3c;
+    background-color: #4f3cff;
     color: rgb(255, 255, 255);
   }
